@@ -41,7 +41,7 @@ getImages().then( (response) =>{
 
         //conversion de la taille de mon image, on cherche le width et height dans la String
         // et on la remplace par 600
-            imageUrl = image.download_url;
+
             imageUrl = image.download_url.replace(image.width, "600").replace(image.height, "600");
             console.log(imageUrl)
             createCard();
