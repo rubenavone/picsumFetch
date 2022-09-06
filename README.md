@@ -1,7 +1,7 @@
 
 # Exercice fetch sur picsum.photos
 
-Vous pouvez consulter le rendu [ici](https://rubenavone.github.io/picsumFetch/public)
+Vous pouvez consulter le rendu [ici](https://rubenavone.github.io/picsumFetch/object)
 
 picsum.photos vous permet de récupérer des photos par lot.  
 La première étape de l'exercice sera de vous rendre sur le site.  
