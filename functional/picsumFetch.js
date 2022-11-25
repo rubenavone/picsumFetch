@@ -65,9 +65,11 @@ function createCard(){
 }
 
 function fillCard(imageUrlApi, authorNameApi, originalUrlApi){
-    image.setAttribute("src", imageUrlApi);
+    // image.setAttribute("src", imageUrlApi);
+    image.src = imageUrlApi;
     author.textContent = authorNameApi;
-    originalUrl.setAttribute("href", originalUrlApi);
+    // originalUrl.setAttribute("href", originalUrlApi);
+    originalUrl.href = originalUrlApi;
     button.textContent = "Visit";
 }
 

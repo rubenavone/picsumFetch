@@ -9,13 +9,12 @@ let urlL50 = "https://picsum.photos/v2/list?limit=50";
  * fetch démarre le chargement d'une ressource sur le réseaux et retourne une promesse
  * Si en faisant des essaie vous avez des erreur cors et que plus rien ne fonctionne 
  * Relancer votre navigateur il peut s'agir d'un bug de celui-ci
- * 
  */
 
 //initialisation de notre fetch qui est dans une fonction
 let getImages = async () => {
     //On affecte la reponse du fetch à une variable
-    let response = await fetch(`${urlL10}`);
+    let response = await fetch(`${url}`);
 
     //Si la réponse est ok alors on la transforme en JSON
     if (response.ok) {
@@ -34,6 +33,7 @@ let getImages = async () => {
 getImages().then((response) => {
     var images = response;
     images.forEach(image => {
+        console.log(image.author)
         let card = new Card(image.download_url, image.author, image.url, image.width, image.height)
         card.createCard();
         let imageUrl = card.resizeImage(card.imageUrl, card.imageWidth, card.imageHeight);
