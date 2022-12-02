@@ -7,6 +7,7 @@
     --light: white;
     --dark: gray;
     --black: black;
+    --standard-width: 30%;
 }
 
 body {
@@ -33,7 +34,7 @@ h1 {
 }
 
 .all-images article {
-    width: 30%;
+    width: var(--standard-width);
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -44,7 +45,7 @@ h1 {
     box-shadow: 6px 6px 30px -20px var(--black);
     filter: grayscale(60%);
     transition: 1s all ease;
-    background-color: white;
+    background-color: var(--light);
 
 }
 
